@@ -1,0 +1,18 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #1b1b1b; }
+.hero { background: linear-gradient(180deg, rgba(7, 163, 100, 0.75), rgba(11, 68, 66, 0.75)), url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem; color: white; }
+.hero h1 { font-size: clamp(2rem, 6vw, 4rem); margin-bottom: 0.75rem; }
+.hero p { font-size: 1.3rem; max-width: 40rem; margin: 0 auto 1.5rem; }
+.btn { display: inline-block; background: #00b179; color: white; padding: 0.85rem 1.75rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: background 0.25s ease; }
+.btn:hover, .btn:focus { background: #008d5f; }
+section { padding: 3rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+.solutions h2, .contact h2 { text-align: center; margin-bottom: 1.25rem; color: #064f41; }
+.solution-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+.card { border: 1px solid #d0e8df; border-radius: 0.75rem; padding: 1.25rem; background: white; box-shadow: 0 6px 18px rgba(5, 40, 40, 0.08); }
+.card h3 { color: #0b6d58; margin-bottom: 0.75rem; }
+.contact form { max-width: 680px; margin: 0 auto; display: grid; gap: 0.85rem; }
+.contact label { display: grid; gap: 0.35rem; font-weight: 600; }
+.contact input, .contact textarea { border: 1px solid #a8d6cc; border-radius: 0.5rem; padding: 0.7rem; font-size: 1rem; }
+.contact textarea { resize: vertical; }
+.footer { text-align: center; padding: 1rem; background: #f5fdfb; border-top: 1px solid #d8ece7; font-size: 0.9rem; }
+@media (max-width: 768px) { .hero { min-height: 60vh; } }
